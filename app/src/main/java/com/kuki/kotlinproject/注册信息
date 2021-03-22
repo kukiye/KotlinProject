@@ -1,0 +1,39 @@
+在 https://getman.cn/ 上可以调试后台接口
+【注册】【post】
+    https://www.wanandroid.com/user/register
+【Request】
+Header
+    Content-Type: application/x-www-form-urlencoded
+Body
+    username:kuki
+    password:123456
+    repassword:123456
+
+【Response】
+注册成功返回
+{
+    "data": {
+        "admin": false,
+        "chapterTops": [],
+        "coinCount": 0,
+        "collectIds": [],
+        "email": "",
+        "icon": "",
+        "id": 90997,
+        "nickname": "kuki",
+        "password": "",
+        "publicName": "kuki",
+        "token": "",
+        "type": 0,
+        "username": "kuki"
+    },
+    "errorCode": 0,
+    "errorMsg": ""
+}
+
+失败返回
+{
+    "data": null,
+    "errorCode": -1,
+    "errorMsg": "用户名已经被注册！"
+}
